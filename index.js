@@ -16,6 +16,7 @@ document.querySelector('form').addEventListener('submit', event => {
 	linkInput.value = `${window.location}#${encrypted}`;
 	linkInput.select();
 	linkInput.setSelectionRange(0, 99999);
+	document.querySelector('#redirect').href =`${window.location}#${encrypted}` ;
 });
 
 const copy = () => {
